@@ -1,0 +1,77 @@
+:root {
+  --main-background: #124559;
+  --main-font-color: #EFF6E0;
+  --form-background: #598392;
+  --button-background: #AEC3B0;
+  --placeholder-color: #AEC3B0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: var(--main-background);
+  color: var(--main-font-color);
+}
+
+h1 {
+  text-align: center;
+  margin: 100px auto 50px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+form {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  height: 80px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--form-background);
+}
+
+form input {
+  border: 0;
+  outline: 0;
+  height: 100%;
+  padding: 0 20px;
+  background: transparent;
+  font-size: 22px;
+  color: var(--main-font-color);
+}
+
+::placeholder {
+    color: var(--placeholder-color);
+}
+
+form button {
+  height: 100%;
+  background: var(--button-background);
+  color: var(--main-font-color);
+  padding: 0 40px;
+  font-size: 22px;
+  border: 0;
+  outline: 0;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    list-style: none;
+}
+
+li {
+  padding-bottom: 20px;
+}
